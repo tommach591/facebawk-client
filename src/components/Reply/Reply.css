@@ -1,0 +1,138 @@
+.Reply {
+  margin: 0.25rem;
+}
+
+.ReplyBubble {
+  width: fit-content;
+  max-width: 95%;
+  display: flex;
+  justify-content: left;
+
+  padding: 0.4rem;
+
+  border: 1px solid rgb(50, 50, 50);
+  background: rgb(255, 250, 230);
+  border-radius: 15px;
+
+  position: relative;
+}
+
+.DeleteReply {
+  width: 0.65rem;
+  height: 0.65rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgb(255, 57, 57);
+  border: 1px solid rgb(50, 50, 50);
+  border-radius: 50%;
+
+  position: absolute;
+  right: -0.1rem;
+  top: -0.1rem;
+}
+
+.DeleteReply:hover {
+  cursor: pointer;
+}
+
+.DeleteReply > img {
+  width: 100%;
+  height: 100%;
+}
+
+.ReplyBubble > img {
+  width: 1.75rem;
+  height: 1.75rem;
+  background: white;
+  border-radius: 50%;
+}
+
+.ReplyBubble > img:hover {
+  cursor: pointer;
+}
+
+.ReplyContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  line-height: 13px;
+
+  margin-top: 0.2rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.1rem;
+}
+
+.ReplyContent > h1 {
+  width: 100%;
+  min-width: 2rem;
+  margin-bottom: 0.35rem;
+
+  color: rgb(50, 50, 50);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.ReplyContent > h1:hover {
+  cursor: pointer;
+}
+
+.ReplyContent > h2 {
+  width: 100%;
+
+  color: rgb(50, 50, 50);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.ReplyInteractions {
+  display: flex;
+
+  position: relative;
+  left: 1rem;
+}
+
+.ReplyInteractions > * {
+  margin: 0.2rem;
+  color: rgb(50, 50, 50);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.ReplyInteractions > *:hover {
+  cursor: pointer;
+}
+
+.ReplyLikes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  right: -1rem;
+  bottom: -0.5rem;
+
+  padding: 0.1rem;
+
+  background: rgb(255, 250, 230);
+  border: 1px solid rgb(50, 50, 50);
+  border-radius: 20px;
+}
+
+.ReplyLikes > img {
+  width: 0.8rem;
+  margin-left: 0.15rem;
+}
+
+.ReplyLikes > h2 {
+  margin-left: 0.1rem;
+  margin-right: 0.15rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}

@@ -1,0 +1,377 @@
+.ProfilePage {
+  min-height: 101vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: rgb(255, 250, 230);
+}
+
+.Display {
+  position: relative;
+  width: 100%;
+  height: 30rem;
+  background-image: linear-gradient(
+    rgb(255, 235, 200),
+    rgb(255, 250, 200),
+    rgb(255, 250, 200)
+  );
+
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 1rem;
+}
+
+.BannerPicture {
+  width: 75%;
+  height: 22rem;
+}
+
+.BannerPicture > * {
+  width: 100%;
+  height: 100%;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.BannerPicture > div {
+  background: rgb(255, 255, 255);
+}
+
+.ProfilePicture {
+  width: 10.5rem;
+  height: 10.5rem;
+  position: absolute;
+  left: 360px;
+  top: 300px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgb(255, 250, 200);
+  border-radius: 50%;
+}
+
+.ProfilePicture > img {
+  width: 10rem;
+
+  background: white;
+  border-radius: 50%;
+}
+
+.DisplayName {
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 38px;
+  font-weight: bold;
+
+  position: absolute;
+  left: 545px;
+  top: 375px;
+}
+
+.DisplayFriendCount {
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: rgb(50, 50, 50);
+
+  position: absolute;
+  left: 548px;
+  top: 420px;
+}
+
+.AtProfilePage {
+  position: absolute;
+  left: 1450px;
+  top: 362px;
+}
+
+.AtPFP {
+  position: absolute;
+  left: 1265px;
+  top: 362px;
+}
+
+.ProfileContent {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.ProfileLeft {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.AboutMe {
+  width: 85%;
+  height: fit-content;
+
+  background: rgb(255, 250, 200);
+  border: 1px solid rgb(120, 120, 120);
+  border-radius: 10px;
+
+  margin: 0.5rem;
+  padding: 1rem;
+
+  position: relative;
+}
+
+.Heading > h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.Heading > h1:hover {
+  cursor: pointer;
+}
+
+.Arrow {
+  border: solid black;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 5px;
+}
+
+.Up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+
+  position: absolute;
+  right: 1.5rem;
+  top: 1.5rem;
+}
+
+.Down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+
+  position: absolute;
+  right: 1.5rem;
+  top: 1.05rem;
+}
+
+.Bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Bio > h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 1.25rem;
+
+  text-align: center;
+  white-space: pre-line;
+  line-height: 18px;
+}
+
+.Interactions {
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.EditDetailsButtonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.EditDetailsButtonContainer > button {
+  width: 100%;
+  height: 2rem;
+
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+
+  border: 0px;
+  border-radius: 5px;
+}
+
+.EditDetailsButtonContainer > button {
+  background: rgb(92, 92, 92);
+}
+
+.EditDetailsButtonContainer > button:hover {
+  cursor: pointer;
+  background: rgb(73, 73, 73);
+}
+
+.EditDetailsButtonContainer > button:active {
+  cursor: pointer;
+  background: rgb(63, 63, 63);
+}
+
+.DetailsContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Detail {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+
+  margin: 0.75rem;
+}
+
+.Detail > img {
+  width: 1.75rem;
+  margin-right: 1rem;
+}
+
+.ProfileFriends {
+  width: 85%;
+  height: fit-content;
+
+  background: rgb(255, 250, 200);
+  border: 1px solid rgb(120, 120, 120);
+  border-radius: 10px;
+
+  margin: 0.5rem;
+  padding: 1rem;
+
+  position: relative;
+}
+
+.ProfileFriends > h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.FriendList {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.FriendGrid {
+  width: 100%;
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: 7rem 7rem 7rem;
+}
+
+.Friend {
+  position: relative;
+  width: 7rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid rgb(50, 50, 50);
+  margin-left: -1px;
+  margin-top: -1px;
+}
+
+.Friend:hover {
+  cursor: pointer;
+}
+
+.Friend > img {
+  width: 100%;
+  background: white;
+}
+
+.Friend > h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+
+  bottom: 0px;
+  right: 2px;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .Display {
+    height: 34rem;
+  }
+
+  .BannerPicture {
+    width: 100%;
+  }
+
+  .ProfilePicture {
+    width: 8rem;
+    height: 8rem;
+    position: absolute;
+    left: 20px;
+    top: 320px;
+  }
+
+  .DisplayName {
+    width: 13rem;
+    font-size: 20px;
+
+    left: 160px;
+    top: 370px;
+  }
+
+  .DisplayFriendCount {
+    font-size: 16px;
+    position: absolute;
+    left: 160px;
+    top: 400px;
+  }
+
+  .AtProfilePage {
+    position: absolute;
+    left: 200px;
+    top: 475px;
+  }
+
+  .AtPFP {
+    position: absolute;
+    left: 20px;
+    top: 475px;
+  }
+
+  .ProfileContent {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ProfileLeft {
+    width: 84.25%;
+  }
+
+  .Interactions {
+    width: 100%;
+  }
+
+  .Friend {
+    width: 5.25rem;
+  }
+
+  .FriendGrid {
+    grid-template-columns: 5.25rem 5.25rem 5.25rem;
+  }
+}
